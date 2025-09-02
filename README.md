@@ -1,13 +1,14 @@
 # 📱 Profile-app-CRUD
 
 แอปพลิเคชันแสดงโปรไฟล์ที่ทันสมัยและมีการโต้ตอบ สร้างขึ้นด้วย **React Native** และ **Expo Router** แอปนี้แสดงข้อมูลโปรไฟล์ส่วนตัว รายละเอียดหลักสูตร และรองรับการยืนยันตัวตนของผู้ใช้ด้วย UI ที่สะอาดตาและสง่างาม พร้อมรองรับทั้งโหมดสว่างและโหมดมืด
-## Demo Project
-./assets/screenshot/IMG_4358.PNG
-./assets/screenshot/IMG_4359.PNG
-./assets/screenshot/IMG_4360.PNG
-./assets/screenshot/IMG_4361.PNG
-./assets/screenshot/IMG_4362.PNG
-./assets/screenshot/IMG_4363.PNG
+## Screenshots
+
+![Screenshot 1](./assets/screenshot/IMG_4358.PNG)
+![Screenshot 2](./assets/screenshot/IMG_4359.PNG)
+![Screenshot 3](./assets/screenshot/IMG_4360.PNG)
+![Screenshot 4](./assets/screenshot/IMG_4361.PNG)
+![Screenshot 5](./assets/screenshot/IMG_4362.PNG)
+![Screenshot 6](./assets/screenshot/IMG_4363.PNG)
 
 
 ## ✨ คุณสมบัติ
