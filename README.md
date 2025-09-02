@@ -56,6 +56,8 @@ Profile-app-Section3/
 │   ├── signup.jsx            # Sign Up screen
 │   ├── about.jsx             # About the Course page
 │   ├── book.jsx              # Book Collection page
+│   ├── book_detail.jsx       
+│   ├── bookModal.jsx         
 │   ├── profile.jsx           # User Profile screen (from menu)
 │   └── _layout.js            # Stack Navigation with Theme + Auth
 ├── components/
@@ -65,8 +67,9 @@ Profile-app-Section3/
 │   └── ThemeContext.js       # Theme state (Dark / Light)
 ├── assets/
 │   └── image/
-│       ├── profile.jpg       # User profile image
+│       ├── my-avatar.jpg       # User profile image
 │       └── teacher.jpg       # Instructor image
+│       ├── profile.jpg       # User profile image
 ├── package.json
 └── README.md
 ```
