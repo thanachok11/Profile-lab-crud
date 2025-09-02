@@ -1,88 +1,88 @@
-# 📱 Profile-app-Section3
+# 📱 Profile-app-CRUD
 
-A modern and interactive profile showcase app built using **React Native** and **Expo Router**. This app displays personal profile information, course details, and allows user authentication with a clean and elegant UI supporting both light and dark modes.
+แอปพลิเคชันแสดงโปรไฟล์ที่ทันสมัยและมีการโต้ตอบ สร้างขึ้นด้วย **React Native** และ **Expo Router** แอปนี้แสดงข้อมูลโปรไฟล์ส่วนตัว รายละเอียดหลักสูตร และรองรับการยืนยันตัวตนของผู้ใช้ด้วย UI ที่สะอาดตาและสง่างาม พร้อมรองรับทั้งโหมดสว่างและโหมดมืด
+##
 
-## ✨ Features
+## ✨ คุณสมบัติ
 
-* 👤 **User Profile** with avatar, name, education, and interests
-* 🔐 **Authentication system** (Sign In / Sign Up)
-* 🧠 **Conditional routing** with token persistence via AsyncStorage
-* 📘 **Course Information**: *Hybrid Mobile Application Programming (IN405109)*
-* 👨‍🏫 **Instructor details** with profile image
-* 🌗 **Theme Toggle** (Dark / Light) powered by Context API
-* 🔗 **Social Links** (Facebook, GitHub, LinkedIn)
-* 💬 **Animated Cards** with smooth scaling effect on press
-* 📱 **Mobile Responsive** and optimized for real-world usage
+* 👤 **โปรไฟล์ผู้ใช้** พร้อมรูปประจำตัว, ชื่อ, การศึกษา และความสนใจ
+* 🔐 **ระบบยืนยันตัวตน** (ลงชื่อเข้าใช้ / ลงทะเบียน)
+* 🧠 **การจัดการเส้นทางตามเงื่อนไข** พร้อมการเก็บโทเค็นด้วย AsyncStorage
+* 📘 **ข้อมูลหลักสูตร**: *Hybrid Mobile Application Programming (IN405109)*
+* 👨‍🏫 **รายละเอียดผู้สอน** พร้อมรูปโปรไฟล์
+* 🌗 **สลับธีม** (มืด / สว่าง) ทำงานโดย Context API
+* 🔗 **ลิงก์โซเชียลมีเดีย** (Facebook, GitHub, LinkedIn)
+* 💬 **การ์ดแบบเคลื่อนไหว** พร้อมเอฟเฟกต์การย่อขยายที่นุ่มนวลเมื่อกด
+* 📱 **ตอบสนองบนมือถือ** และปรับแต่งเพื่อการใช้งานจริง
 
-## 🛠️ Tech Stack
+## 🛠️ เทคโนโลยีที่ใช้
 
 * React Native
 * Expo
 * Expo Router
 * React Native Vector Icons
 * Context API
-* AsyncStorage (for token storage)
+* AsyncStorage (สำหรับการจัดเก็บโทเค็น)
 * Animated API
 
-## 🚀 Getting Started
+## 🚀 เริ่มต้นใช้งาน
 
-### Prerequisites
+### ข้อกำหนดเบื้องต้น
 
 * Node.js
 * Expo CLI (`npm install -g expo-cli`)
 
-### Installation
+### การติดตั้ง
 
 ```bash
 npm install
 ```
 
-### Running the App
+### การเรียกใช้แอป
 
 ```bash
 npx expo start
 ```
 
-Then scan the QR code with **Expo Go** or use an emulator.
+จากนั้นสแกน QR Code ด้วย **Expo Go** หรือใช้ Emulator
 
-## 🔄 Project Structure
+## 🔄 โครงสร้างโปรเจกต์
 
 ```
 Profile-app-Section3/
 ├── app/
-│   ├── index.jsx             # Redirects based on auth token
-│   ├── main.jsx              # Main Profile Page after login
-│   ├── signin.jsx            # Sign In screen
-│   ├── signup.jsx            # Sign Up screen
-│   ├── about.jsx             # About the Course page
-│   ├── book.jsx              # Book Collection page
-│   ├── book_detail.jsx       
-│   ├── bookModal.jsx         
-│   ├── profile.jsx           # User Profile screen (from menu)
-│   └── _layout.js            # Stack Navigation with Theme + Auth
+│   ├── index.jsx             # เปลี่ยนเส้นทางตามโทเค็นการยืนยันตัวตน
+│   ├── main.jsx              # หน้าโปรไฟล์หลักหลังเข้าสู่ระบบ
+│   ├── signin.jsx            # หน้าจอลงชื่อเข้าใช้
+│   ├── signup.jsx            # หน้าจอลงทะเบียน
+│   ├── about.jsx             # หน้าเกี่ยวกับหลักสูตร
+│   ├── book.jsx              # หน้าคอลเลกชันหนังสือ
+│   ├── book_detail.jsx       # หน้ารายละเอียดหนังสือ
+│   ├── bookNewModal.jsx      # หน้าเพิ่มหนังสือ   
+│   ├── profile.jsx           # หน้าจอโปรไฟล์ผู้ใช้ (จากเมนู)
+│   └── _layout.js            # Stack Navigation พร้อม Theme + Auth
 ├── components/
-│   ├── ThemeToggle.jsx       # Theme switch in header
-│   └── AuthToggle.jsx        # Avatar or Sign In/Up button in header
+│   ├── ThemeToggle.jsx       # สวิตช์ธีมในส่วนหัว
+│   └── AuthToggle.jsx        # รูปประจำตัว หรือปุ่มลงชื่อเข้าใช้/ลงทะเบียนในส่วนหัว
 ├── context/
-│   └── ThemeContext.js       # Theme state (Dark / Light)
+│   └── ThemeContext.js       # สถานะธีม (มืด / สว่าง)
 ├── assets/
 │   └── image/
-│       ├── my-avatar.jpg       # User profile image
-│       └── teacher.jpg       # Instructor image
-│       ├── profile.jpg       # User profile image
+│       ├── my-avatar.jpg     # รูปโปรไฟล์ผู้ใช้
+│       └── teacher.jpg       # รูปผู้สอน
+│       ├── profile.jpg       # รูปโปรไฟล์ผู้ใช้
 ├── package.json
 └── README.md
 ```
 
-## 🦠 Demo Highlights
+## 🦠 ไฮไลท์การสาธิต
 
-* 🔄 Auto redirect to `/signin` if token is missing
-* 🧮 AsyncStorage-based session memory
-* 👤 Avatar in header using user's first letter
-* 🎨 Color themes switch in real-time
+* 🔄 เปลี่ยนเส้นทางอัตโนมัติไปยัง `/signin` หากไม่มีโทเค็น
+* 🧮 หน่วยความจำเซสชันที่อิงตาม AsyncStorage
+* 👤 รูปประจำตัวในส่วนหัวที่ใช้ตัวอักษรแรกของผู้ใช้
+* 🎨 สลับธีมสีได้แบบเรียลไทม์
 
-## 👤 Author
-
-
-Crafted with ❤️ for the course *Hybrid Mobile Application Programming* (**IN405109**)
-**Computer Science, Khon Kaen University**
+## 👤 ผู้สร้าง
+## Thanachok Suwan ##
+สร้างสรรค์ด้วย ❤️ สำหรับวิชา *Hybrid Mobile Application Programming* (**IN405109**)
+**วิทยาการคอมพิวเตอร์, มหาวิทยาลัยขอนแก่น**
